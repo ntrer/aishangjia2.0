@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/color_w"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/line"
+        android:id="@+id/dingjin_content"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_5"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/chengjiao_shanghu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginBottom="3dp"
+                android:textColor="#999"
+                android:text="成交商户(带单)："
+                />
+
+            <TextView
+                android:id="@+id/chengjiao_shanghu_text"
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginBottom="3dp"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:textColor="#999"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+            <TextView
+                android:id="@+id/shouka_shanghu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@+id/chengjiao_shanghu"
+                android:textColor="#999"
+                android:text="售卡商户(被带单)："
+                />
+
+            <TextView
+                android:id="@+id/shouka_shanghu_text"
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@+id/chengjiao_shanghu_text"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:textColor="#999"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+            <TextView
+                android:id="@+id/chengjiao_danshu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@+id/shouka_shanghu"
+                android:textColor="#999"
+                android:text="成交单数："
+                />
+
+            <TextView
+                android:id="@+id/chengjiao_danshu_text"
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@+id/shouka_shanghu_text"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:textColor="#999"
+                android:text="1"
+                />
+
+            <TextView
+                android:id="@+id/chengjiao_jine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@+id/chengjiao_danshu"
+                android:textColor="#999"
+                android:text="成交金额："
+                />
+
+            <TextView
+                android:id="@+id/chengjiao_jine_text"
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@+id/chengjiao_danshu_text"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:textColor="#999"
+                android:text="100"
+                />
+
+
+            <TextView
+                android:id="@+id/fencheng_fangshi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@+id/chengjiao_jine"
+                android:textColor="#999"
+                android:text="分成方式："
+                />
+
+            <TextView
+                android:id="@+id/fencheng_fangshi_text"
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@+id/chengjiao_jine_text"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:textColor="#999"
+                android:text="不计算"
+                />
+
+            <TextView
+                android:id="@+id/fencheng_zhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@+id/fencheng_fangshi"
+                android:textColor="#999"
+                android:text="分成值："
+                />
+
+            <TextView
+                android:id="@+id/fencheng_zhi_text"
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@+id/fencheng_fangshi_text"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:textColor="#999"
+                android:text="0"
+                />
+
+            <TextView
+                android:id="@+id/yingfu_yongjin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@+id/fencheng_zhi"
+                android:textColor="#999"
+                android:text="应付佣金："
+                />
+
+            <TextView
+                android:id="@+id/yingfu_yongjin_text"
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@+id/fencheng_zhi_text"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:textColor="#999"
+                android:text="0"
+                />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_8"
+        android:background="#E9EDF5"
+        android:layout_below="@+id/dingjin_content"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_15"
+        />
+</RelativeLayout>

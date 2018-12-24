@@ -1,0 +1,52 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:voiceView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.shushang.aishangjia.activity.CityActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_color"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:titleTextColor="@android:color/white"
+        android:theme="@style/ToolBarStyle"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/voice"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:gravity="top"
+        >
+    </TextView>
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_restart"
+        style="@style/activity_register_btn_submit"
+        android:text="重新输入"
+        android:layout_marginBottom="@dimen/dp_25"/>
+
+</RelativeLayout>

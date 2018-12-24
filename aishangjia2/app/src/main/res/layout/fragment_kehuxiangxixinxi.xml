@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#E9EDF5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+ <RelativeLayout
+     android:background="@drawable/linear_border2"
+     android:gravity="center_vertical"
+     android:layout_width="match_parent"
+     android:layout_marginTop="@dimen/dp_10"
+     android:layout_marginLeft="@dimen/dp_15"
+     android:layout_marginRight="@dimen/dp_15"
+     android:layout_marginBottom="@dimen/dp_15"
+     android:layout_height="@dimen/dp_199">
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="wrap_content"
+android:layout_marginBottom="@dimen/dp_20"
+android:layout_marginTop="@dimen/dp_20"
+android:layout_marginLeft="@dimen/dp_20"
+android:layout_height="match_parent">
+
+<TextView
+android:id="@+id/activity_count"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginBottom="@dimen/dp_3"
+android:textSize="@dimen/sp_12"
+android:textColor="#333"
+android:text="活动次数"
+/>
+
+<TextView
+android:id="@+id/chengjiaoliang"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="@dimen/sp_12"
+android:textColor="#333"
+android:layout_marginBottom="@dimen/dp_3"
+android:text="总订金成交量"
+/>
+
+<TextView
+android:id="@+id/chengjiaoe"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="@dimen/sp_12"
+android:layout_marginBottom="@dimen/dp_3"
+android:textColor="#333"
+android:text="总订金成交额"
+/>
+
+ <TextView
+     android:id="@+id/dingdanchengjiaoliang"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="@dimen/sp_12"
+     android:textColor="#333"
+     android:layout_marginBottom="@dimen/dp_3"
+     android:text="总订单成交量"
+     />
+
+ <TextView
+     android:id="@+id/dingdanchengjiaoe"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="@dimen/sp_12"
+     android:layout_marginBottom="@dimen/dp_3"
+     android:textColor="#333"
+     android:text="总订单成交额"
+     />
+
+<TextView
+android:id="@+id/pingjun_chengjiaoe"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="@dimen/sp_12"
+android:textColor="#333"
+android:layout_marginBottom="@dimen/dp_3"
+android:text="平均成交额"
+/>
+<TextView
+android:id="@+id/sign_count"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="@dimen/sp_12"
+android:textColor="#333"
+android:layout_marginBottom="@dimen/dp_3"
+android:text="签到次数"
+/>
+<TextView
+android:id="@+id/genjin_count"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="@dimen/sp_12"
+android:textColor="#333"
+android:layout_marginBottom="@dimen/dp_3"
+android:text="跟进次数"
+/>
+<TextView
+android:id="@+id/chuangjianren"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="@dimen/sp_12"
+android:textColor="#333"
+android:layout_marginBottom="@dimen/dp_3"
+android:text="创建人"
+/>
+<TextView
+android:id="@+id/next_time"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="@dimen/sp_12"
+android:textColor="#333"
+android:layout_marginBottom="@dimen/dp_3"
+android:text="下次预约时间"
+/>
+
+</LinearLayout>
+
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="wrap_content"
+android:layout_marginBottom="@dimen/dp_20"
+android:layout_marginTop="@dimen/dp_20"
+android:layout_marginRight="@dimen/dp_20"
+android:layout_alignParentRight="true"
+android:gravity="right"
+android:layout_height="match_parent">
+
+
+<TextView
+android:id="@+id/activity_count_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginBottom="@dimen/dp_3"
+android:textSize="@dimen/sp_12"
+android:textColor="#999"
+android:gravity="right"
+
+/>
+
+<TextView
+android:id="@+id/chengjiaoliang_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="@dimen/sp_12"
+android:textColor="#999"
+android:layout_marginBottom="@dimen/dp_3"
+/>
+
+<TextView
+android:id="@+id/chengjiaoe_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="@dimen/sp_12"
+android:layout_marginBottom="@dimen/dp_3"
+android:textColor="#999"
+android:maxLines="1"
+/>
+
+ <TextView
+     android:id="@+id/dingdanchengjiaoliang_text"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="@dimen/sp_12"
+     android:textColor="#999"
+     android:layout_marginBottom="@dimen/dp_3"
+     />
+
+ <TextView
+     android:id="@+id/dingdanchengjiaoe_text"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="@dimen/sp_12"
+     android:layout_marginBottom="@dimen/dp_3"
+     android:textColor="#999"
+     android:maxLines="1"
+     />
+
+<TextView
+android:id="@+id/pingjun_chengjiaoe_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="@dimen/sp_12"
+android:textColor="#999"
+android:layout_marginBottom="@dimen/dp_3"
+
+/>
+<TextView
+android:id="@+id/sign_count_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="@dimen/sp_12"
+android:textColor="#999"
+android:layout_marginBottom="@dimen/dp_3"
+
+/>
+<TextView
+android:id="@+id/genjin_count_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="@dimen/sp_12"
+android:textColor="#999"
+android:layout_marginBottom="@dimen/dp_3"
+
+/>
+<TextView
+android:id="@+id/chuangjianren_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="@dimen/sp_12"
+android:textColor="#999"
+android:layout_marginBottom="@dimen/dp_3"
+
+/>
+<TextView
+android:id="@+id/nexttime_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="@dimen/sp_12"
+android:textColor="#999"
+android:layout_marginBottom="@dimen/dp_3"
+/>
+
+
+</LinearLayout>
+ </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2172EB"
+    android:layout_height="match_parent">
+
+
+
+    <com.shushang.aishangjia.ui.CircleImageView
+        android:layout_width="@dimen/dp_65"
+        android:layout_height="@dimen/dp_65"
+        android:src="@mipmap/icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_100"
+        />
+
+
+    <ImageView
+        android:id="@+id/finger_icon"
+        android:src="@mipmap/finger"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/dp_175"
+        android:layout_height="@dimen/dp_175"/>
+
+    <TextView
+        android:layout_below="@+id/finger_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用指纹解锁"
+        android:textColor="@color/color_w"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><!--最新栏目的新闻-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout="@layout/preference_item"
+    android:title="设置">
+        <CheckBoxPreference
+            android:key="switch"
+            android:layout="@layout/preference_item"
+            android:summary="开启指纹登录功能"
+            android:title="指纹登录"
+            android:widgetLayout="@layout/switch_layout"
+            />
+
+
+        <Preference
+            android:key="yinsi"
+            android:layout="@layout/preference_item"
+            android:summary="查看app使用相关政策"
+            android:title="隐私政策"
+            />
+
+        <Preference
+            android:key="shiyong"
+            android:layout="@layout/preference_item"
+            android:summary="点击查看app功能使用说明"
+            android:title="操作说明"
+            />
+</PreferenceScreen>

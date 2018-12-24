@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/color_w"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/dingjin_title"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/kehu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_alignParentLeft="true"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_15"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text="张三"
+            />
+
+        <TextView
+            android:id="@+id/kehu_phone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+           android:gravity="center_vertical"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_15"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="18637280068"
+            />
+
+
+        <ImageView
+            android:id="@+id/right_arrow"
+            android:layout_width="@dimen/dp_9"
+            android:layout_height="@dimen/dp_16"
+            android:gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:background="@mipmap/right_arrow"
+            />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@id/dingjin_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        android:background="#E9EDF5"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_15"
+        />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/line"
+        android:id="@+id/kehu_info"
+        android:paddingLeft="@dimen/dp_16"
+       android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_10"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/dingjin_pic"
+            android:paddingRight="@dimen/dp_10"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/this_intent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/dp_1"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#999999"
+                android:text="本次意向："
+                />
+
+            <TextView
+                android:id="@+id/this_intent_text"
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:layout_below="@id/people"
+                android:textColor="#999999"
+                android:layout_toRightOf="@+id/this_intent"
+                android:layout_alignBaseline="@+id/this_intent"
+                android:text="有意向，需考虑竞品"
+                />
+
+
+
+            <TextView
+                android:id="@+id/creater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/sp_12"
+                android:layout_below="@+id/this_intent"
+                android:layout_marginBottom="@dimen/dp_1"
+                android:textColor="#999999"
+                android:text="创建人："
+                />
+
+            <TextView
+                android:id="@+id/creater_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginBottom="3dp"
+                android:layout_toRightOf="@+id/creater"
+                android:layout_below="@+id/this_intent_text"
+                android:layout_alignBaseline="@+id/creater"
+                android:textColor="#999999"
+                android:text="超级管理员"
+                />
+
+            <TextView
+                android:id="@+id/next_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/sp_12"
+                android:layout_below="@+id/creater"
+                android:layout_marginBottom="@dimen/dp_1"
+                android:textColor="#999999"
+                android:text="下次预约时间："
+                />
+
+            <TextView
+                android:id="@+id/next_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/sp_12"
+                android:layout_toRightOf="@+id/next_time"
+                android:layout_below="@+id/creater_text"
+                android:layout_alignBaseline="@+id/next_time"
+                android:textColor="#999999"
+                android:text="2018-11-08 18：19：00"
+                />
+
+            <TextView
+                android:id="@+id/source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/sp_12"
+                android:layout_below="@+id/next_time"
+                android:layout_marginBottom="@dimen/dp_1"
+                android:textColor="#999999"
+                android:text="来源："
+                />
+
+            <TextView
+                android:id="@+id/source_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/sp_12"
+                android:layout_toRightOf="@+id/source"
+                android:layout_below="@+id/next_time_text"
+                android:layout_alignBaseline="@+id/source"
+                android:textColor="#999999"
+                android:text="电话"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_8"
+        android:background="#E9EDF5"
+        android:layout_below="@+id/kehu_info"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_15"
+        />
+</RelativeLayout>

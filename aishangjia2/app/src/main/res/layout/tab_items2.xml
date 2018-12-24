@@ -1,0 +1,27 @@
+<LinearLayout
+    android:id="@+id/ll_actor"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dp_100"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_marginTop="7dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/textview_border"
+    >
+
+    <TextView
+        android:id="@+id/tab_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="吴彦祖爱啥啥发"
+        android:gravity="left"
+        android:textSize="@dimen/sp_13"
+        android:textColor="@drawable/text_select2"
+        android:background="@drawable/textview_border"
+        android:maxLines="2"
+        android:ellipsize="end"
+        />
+
+</LinearLayout>

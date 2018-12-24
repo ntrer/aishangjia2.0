@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/shaixuanlan"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/color_w"
+        android:layout_height="@dimen/dp_36">
+
+        <ImageView
+            android:id="@+id/kehu_source"
+            android:src="@mipmap/kehu_source"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_height="@dimen/dp_13"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp_2"
+            android:layout_height="@dimen/dp_15"
+            android:src="@mipmap/kehu_line"
+            />
+
+        <ImageView
+            android:id="@+id/kehu_intent"
+            android:src="@mipmap/kehu_intent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_height="@dimen/dp_13"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp_2"
+            android:layout_height="@dimen/dp_15"
+            android:src="@mipmap/kehu_line"
+            />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_8"
+        android:background="#E9EDF5"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_below="@+id/shaixuanlan"
+        />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_below="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/line"
+        android:id="@+id/rv_genjinjilu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="@dimen/dp_130"
+            android:src="@mipmap/ic_no_data" />
+
+    </LinearLayout>
+
+</RelativeLayout>

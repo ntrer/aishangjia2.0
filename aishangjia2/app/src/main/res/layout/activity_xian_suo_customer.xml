@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_220"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/movie_collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleTextAppearance="@style/CollapsedAppBar"
+            app:expandedTitleGravity="top"
+            app:expandedTitleMarginStart="@dimen/dp_18"
+            app:expandedTitleMarginTop="@dimen/dp_60"
+            app:titleEnabled="false"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/outtime"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:src="@mipmap/time_time"
+                android:layout_marginTop="@dimen/dp_60"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/dp_20"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/dp_18"
+                android:layout_marginTop="@dimen/dp_95"
+                >
+
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="姓名："-->
+                        <!--android:id="@+id/name"-->
+                        <!--android:textSize="@dimen/sp_12"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textColor="#fff"-->
+                        <!--/>-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/name_detail"
+                        android:textSize="@dimen/sp_15"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:text="张晓东"
+                        />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="电话："
+                        android:id="@+id/phone"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/phone_detail"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="本次："
+                        android:id="@+id/intent"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/intent_detail"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上次沟通时间："
+                        android:id="@+id/money"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/money_detail"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="下次预约时间："
+                        android:id="@+id/time"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/time_detail"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/jieduan"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="#fff"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/jieduan_detail"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="#fff"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:titleTextAppearance="@style/Toolbar.TitleText"
+                app:titleTextColor="@android:color/white"
+                android:theme="@style/ToolBarStyle"
+                >
+
+                <TextView
+                    android:id="@+id/crm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="CRM"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:background="@null"
+                    />
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/sliding_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/colorPrimary"
+            android:background="@color/white"
+            app:tabGravity="fill"
+            app:tabMode="fixed" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_edit2"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/border2"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@mipmap/bi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp_5"
+            android:text="继续跟进"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
